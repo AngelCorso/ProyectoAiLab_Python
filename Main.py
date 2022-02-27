@@ -339,9 +339,9 @@ def OpenFightWindow(charactersToFight,level,isHistoryMode):
 
     im1 = ImageTk.PhotoImage(Im_1)
     im2 = ImageTk.PhotoImage(Im_2)
-
-    Label(FightWindow,image=im1).grid(row=0,column=1, rowspan=4)
-    Label(FightWindow,image=im2).grid(row=0,column=2, rowspan=4)
+    
+    Label(FightWindow,image=im1,bg="#873e23").grid(row=0,column=1, rowspan=4)
+    Label(FightWindow,image=im2,bg="#2596be").grid(row=0,column=2, rowspan=4)
     Label(FightWindow,text=player.name,bg="#C1B9B9",font=("Arial",15)).grid(row=5,column=1)
     Label(FightWindow,text=cpu.name,bg="#C1B9B9",font=("Arial",15)).grid(row=5,column=2)
     Label(FightWindow,text="HP",bg="#C1B9B9",font=("Arial",15)).grid(row=6,column=1)
